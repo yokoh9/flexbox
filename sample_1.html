@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+<link rel="stylesheet" href="common/css/bootstrap.min.css">
+<style>
+body{
+	margin:30px;
+}
+.flexbox{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.flexbox > .box:nth-child(1){
+	background-color:#ff9900;
+}
+.flexbox > .box:nth-child(2){
+	background-color:#ffff33;
+}
+.flexbox > .box:nth-child(3){
+	background-color:#99cc33;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="flexbox">
+	<div class="box">box 1</div>
+	<div class="box">box 2</div>
+	<div class="box">box 3</div>
+</div><!-- /.flexbox -->
+
+</div><!-- /.container -->
+
+</body>
+</html>
