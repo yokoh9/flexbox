@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+<link rel="stylesheet" href="common/css/bootstrap.min.css">
+<link rel="stylesheet" href="common/css/style.css">
+<style>
+/* 親要素 */
+
+/* 子要素 */
+.flexbox.box1 > div{
+	-webkit-flex: 1;
+	flex: 1;
+}
+.flexbox.box2 > div:nth-child(2){
+	-webkit-flex: 2;
+	flex: 2;
+}
+.flexbox.box2 > div:nth-child(1),
+.flexbox.box2 > div:nth-child(3){
+	-webkit-flex: 1;
+	flex: 1;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="page-header">
+		<h1>flex プロパティ</h1>
+	</div>
+
+	<h2>flex: 1;</h2>
+
+	<div class="flexbox box1">
+		<div>box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。</div>
+		<div>box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。</div>
+		<div>box 3 のコンテンツです。box 3 のコンテンツです。box 3 のコンテンツです。</div>
+	</div><!-- /.flexbox -->
+
+
+	<h2>中央の子要素に対して flex: 2;</h2>
+
+	<div class="flexbox box2">
+		<div>box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。box 1 のコンテンツです。</div>
+		<div>box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。box 2 のコンテンツです。</div>
+		<div>box 3 のコンテンツです。box 3 のコンテンツです。box 3 のコンテンツです。</div>
+	</div><!-- /.flexbox -->
+
+</div><!-- /.container -->
+
+</body>
+</html>

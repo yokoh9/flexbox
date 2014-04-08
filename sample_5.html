@@ -6,13 +6,23 @@
 <link rel="stylesheet" href="common/css/bootstrap.min.css">
 <link rel="stylesheet" href="common/css/style.css">
 <style>
+/* 親要素 */
+/*.flexbox{ 
+	-webkit-flex-direction: column-reverse;
+	flex-direction: column-reverse;
+}*/
+/* 子要素 */
+.flexbox > div:nth-child(2){
+	-webkit-order: -1;
+	order: -1;
+}
 </style>
 </head>
 <body>
 <div class="container">
 
 	<div class="page-header">
-		<h1>display: flex;</h1>
+		<h1>order: -1;</h1>
 	</div>
 
 	<div class="flexbox">

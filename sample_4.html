@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Flexbox</title>
+<link rel="stylesheet" href="common/css/bootstrap.min.css">
+<link rel="stylesheet" href="common/css/style.css">
+<style>
+/* 親要素 */
+.flexbox.nowrap{ 
+	-webkit-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+.flexbox.wrap{ 
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.flexbox.wrap_reverse{ 
+	-webkit-flex-wrap: wrap-reverse;
+	flex-wrap: wrap-reverse;
+}
+/* 子要素 */
+
+</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="page-header">
+		<h1>flex-wrap プロパティ</h1>
+	</div>
+
+	<h2 id="flex_nowrap">flex-wrap: nowrap</h2>
+
+	<div class="flexbox nowrap">
+		<div>box 1 のコンテンツです。</div>
+		<div>box 2 のコンテンツです。</div>
+		<div>box 3 のコンテンツです。</div>
+		<div>box 4 のコンテンツです。</div>
+		<div>box 5 のコンテンツです。</div>
+		<div>box 6 のコンテンツです。</div>
+		<div>box 7 のコンテンツです。</div>
+	</div><!-- /.flexbox -->
+
+	<h2 id="flex_wrap">flex-wrap: wrap</h2>
+
+	<div class="flexbox wrap">
+		<div>box 1 のコンテンツです。</div>
+		<div>box 2 のコンテンツです。</div>
+		<div>box 3 のコンテンツです。</div>
+		<div>box 4 のコンテンツです。</div>
+		<div>box 5 のコンテンツです。</div>
+		<div>box 6 のコンテンツです。</div>
+		<div>box 7 のコンテンツです。</div>
+	</div><!-- /.flexbox -->
+
+	<h2 id="flex_wrap_reverse">flex-wrap: wrap-reverse</h2>
+
+	<div class="flexbox wrap_reverse">
+		<div>box 1 のコンテンツです。</div>
+		<div>box 2 のコンテンツです。</div>
+		<div>box 3 のコンテンツです。</div>
+		<div>box 4 のコンテンツです。</div>
+		<div>box 5 のコンテンツです。</div>
+		<div>box 6 のコンテンツです。</div>
+		<div>box 7 のコンテンツです。</div>
+	</div><!-- /.flexbox -->
+
+</div><!-- /.container -->
+
+</body>
+</html>

@@ -1,24 +1,21 @@
-.item_list .item a{
-	display:block;
-	margin-bottom:10px;
+/* Flexbox */
+
+/* 親要素 */
+.flexbox{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 }
-.item_list .item img,
-.item_detail .image img,
-.checklist li img{
-	display:block;
-	width:100%;
-	margin:0 0 6px 0;
-	padding:2px;
-	border:1px solid #ccc;
+
+/* 子要素 */
+.flexbox > div{
+	padding:30px;
 }
-.item_list .item .title,
-.item_list .item .price{
-	display:block;
-}
-.checklist{
-	padding:0;
-}
-.checklist li{
-	margin-bottom:10px;
-	list-style-type:none;
-}
+.flexbox > div:nth-child(1){	background-color:#ff9900;}
+.flexbox > div:nth-child(2){	background-color:#ffff33;}
+.flexbox > div:nth-child(3){	background-color:#99cc33;}
+.flexbox > div:nth-child(4){	background-color:#330099; color:#fff;}
+.flexbox > div:nth-child(5){	background-color:#ff6600;}
+.flexbox > div:nth-child(6){	background-color:#99ccff;}
+.flexbox > div:nth-child(7){	background-color:#ff9999;}
